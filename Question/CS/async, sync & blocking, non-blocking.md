@@ -29,7 +29,7 @@ B의 함수에게 제어권을 넘겨준다면 B의 함수를 완료하고 다�
 
 ### <span style="color:red;  font-weight:bold"> Q. </span> 블로킹, 논블로킹, 동기, 비동기 장단점
 
-<span style="color:#00ff00;  font-weight:bold"> A. </span>블로킹 <br/>
+<span style="color:#00ff00;  font-weight:bold"> A. <br/> </span>블로킹 <br/>
 
 > 장점<br/>
 > 작업이 순차적으로 이루어지기에 작업 흐름을 쉽게 이해할 수 있음
