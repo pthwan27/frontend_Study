@@ -2,7 +2,11 @@
 
 # Redux ?
 
-Redux란 JavaScript 전역상태(데이터) 관리 라이브러리다
+Redux란 JavaScript 상태 관리 라이브러리로 복잡한 컴포넌트 구조 속에서 간편하게 모든 컴포넌트들이 state를 통해 데이터를 쉽게 공유할 수 있게 해주는 방식
+
+컴포넌트에 집중된 리액트와 시너지가 좋아 리액트와 많이 사용하는 것이지 리액트의 라이브러리가 아니라 JS의 라이브러리입니다.
+
+## Redux 사용 이유?
 
 ## 세 가지 원칙
 
@@ -19,7 +23,7 @@ Redux란 JavaScript 전역상태(데이터) 관리 라이브러리다
 
 ## Store, Action, Reducer의 의미와 특징
 
-![간단한 라이프사이클](../../../images/CS/redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4/Store%2C%20Reducer%2C%20Action.png)
+![간단한 라이프사이클](../../../images/CS/redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4/)
 
 ### Store
 
