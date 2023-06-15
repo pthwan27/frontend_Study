@@ -4,11 +4,16 @@
 
 Redux란 JavaScript 상태 관리 라이브러리로 복잡한 컴포넌트 구조 속에서 간편하게 모든 컴포넌트들이 state를 통해 데이터를 쉽게 공유할 수 있게 해주는 방식
 
-컴포넌트에 집중된 리액트와 시너지가 좋아 리액트와 많이 사용하는 것이지 리액트의 라이브러리가 아니라 JS의 라이브러리입니다.
+컴포넌트에 집중된 리액트와 시너지가 좋아 리액트와 많이 사용하는 것이지 리액트의 라이브러리가 아니라 JS의 라이브러리!!
 
 ## Redux 사용 이유?
 
-모든 상태 업데이트를 액션으로 정ㅇ
+규모가 커질수록 데이터가 많아지고 컴포넌트들간의 관계가 복잡해집니다.
+
+이 때 많은 데이터들이 공유하는 상황에서 단방향 데이터 흐름(Flux 패턴)을 적용해 데이터들을 효율적이고 간단하게 관리하기 위해 사용합니다.
+
+Redux = Red(user) + (Fl)ux
+![Alt text](../../../images/CS/redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4/Flux%ED%8C%A8%ED%84%B4.png)
 
 ## 세 가지 원칙
 
@@ -25,7 +30,7 @@ Redux란 JavaScript 상태 관리 라이브러리로 복잡한 컴포넌트 구�
 
 ## Store, Action, Reducer의 의미와 특징
 
-![간단한 라이프사이클](../../../images/CS/redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4/)
+![store, action, reducer](../../../images/CS/redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4/Store%2C%20Reducer%2C%20Action.png)
 
 ### Store
 
