@@ -10,8 +10,6 @@
 
 > JavaScript 상태(데이터) 관리 라이브러리로 Flux의 개념인 단뱡향으로 state를 변경할 수 있는 라이브러리 입니다.
 
----
-
 ### <span style="color:red;  font-weight:bold"> Q. </span>
 
 > Redux를 왜 써야할까?
@@ -20,8 +18,6 @@
 
 > 규모가 커질수록 데이터가 많아지고 컴포넌트들간의 관계가 복잡해집니다.
 > 이 때 많은 데이터들이 공유하는 상황에서 단방향 데이터 흐름을 통해 데이터들을 효율적이고 간단하게 관리하기 위해 사용합니다.
-
----
 
 ### <span style="color:red;  font-weight:bold"> Q. </span>
 
@@ -38,8 +34,6 @@
 
 > 디버깅에 유리
 > (action, state의 log가 기록되기 때문에 redux dev tool(크롬 확장 프로그램)을 이용해 쉽게 디버깅 할 수 있다.)
-
----
 
 ### <span style="color:red;  font-weight:bold"> Q. </span>
 
