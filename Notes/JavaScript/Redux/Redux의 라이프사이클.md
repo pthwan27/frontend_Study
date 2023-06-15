@@ -71,7 +71,7 @@ Redux = Red(user) + (Fl)ux
 
 ## 왜 이런 흐름이 있는걸까 ?
 
-바로바로 데이터가 한 방향으로만 흘러야하기 때문!
+바로바로 데이터가 한 방향으로만 흘러야하기 때문!  -> Flux 패턴 , 단방향으로 데이터가 흘러가 관리하기가 더 쉬워진다!
 
 ![Untitled](../../../images/CS/redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4/Redux%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4.png)
 
