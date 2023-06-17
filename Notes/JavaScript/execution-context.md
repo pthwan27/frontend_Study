@@ -124,7 +124,7 @@ outer는 이전 렉시컬 환경을 가리킨다. 즉, 함수는 자신이 선�
 
 ES6부터 this의 바인딩이 Lexical Environment 안에 있는 Record 안에서 일어난다
 
-- 글로벌 실행 컨텍스트의 경우, trict mode라면 `undefined` 로 바인딩되고 아니라면 글로벌 객체로 바인딩된다. (브라우저에선 window, 노드에선 global)
+- 글로벌 실행 컨텍스트의 경우,strict mode라면 `undefined` 로 바인딩되고 아니라면 글로벌 객체로 바인딩된다. (브라우저에선 window, 노드에선 global)
 - 함수 실행 컨텍스트의 경우, 해당 함수가 어떻게 호출되었는지에 따라 바인딩된다.</br></br>
 
 ---
