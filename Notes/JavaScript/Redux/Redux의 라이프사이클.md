@@ -68,7 +68,7 @@ Redux = Red(user) + (Fl)ux
 
 `dispatch(액션)`을 통해 `Reducer`를 호출한다.
 
-`Reducer`는 `Store`를 생성한다
+`Reducer`는 새로운 `state`를 만들고 업데이트해줍니다.
 
 ## 왜 이런 흐름이 있는걸까 ?
 
