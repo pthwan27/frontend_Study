@@ -1,7 +1,5 @@
 # 실행 컨텍스트(Execution Context)
 
-# 실행 컨텍스트(Execution Context)
-
 ## 실행 컨텍스트란?
 
 코드를 실행하는데 필요한 조건이나 상태를 모아둔 객체이다.
