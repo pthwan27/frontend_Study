@@ -61,9 +61,9 @@
 
 ## useLayoutEffect
 
-**`useLayoutEffect`**는 **`useEffect`**와 매우 유사하고 사용 방법도 같지만, 실행 시점에 차이가 있다. **`useLayoutEffect`**는 **DOM 업데이트가 화면에 반영되기 직전에 실행**되며, 이는 클래스 컴포넌트의 **`componentDidMount`**와 **`componentDidUpdate`**와 더 유사한 실행 시점을 갖는다. 이 Hook은 주로 레이아웃의 변화를 측정하거나, DOM을 조작해야하는 경우에 사용된다.
+**`useLayoutEffect`** 는 **`useEffect`** 와 매우 유사하고 사용 방법도 같지만, 실행 시점에 차이가 있다. **`useLayoutEffect`** 는 **DOM 업데이트가 화면에 반영되기 직전에 실행**되며, 이는 클래스 컴포넌트의 **`componentDidMount`** 와 **`componentDidUpdate`** 와 더 유사한 실행 시점을 갖는다. 이 Hook은 주로 레이아웃의 변화를 측정하거나, DOM을 조작해야하는 경우에 사용된다.
 
-**`useLayoutEffect`**는 DOM 업데이트가 사용자에게 보이기 전에 실행되기 때문에, 사용자가 화면 상의 깜박임이나 레이아웃 이동을 경험하지 않도록 하여 더 나은 사용자 경험을 제공할 수 있다. 하지만 **`useLayoutEffect`**는 성능에 부정적인 영향을 미칠 수 있으므로, 반드시 필요한 경우에만 사용하는 것이 좋다.<br/><br/>
+**`useLayoutEffect`** 는 DOM 업데이트가 사용자에게 보이기 전에 실행되기 때문에, 사용자가 화면 상의 깜박임이나 레이아웃 이동을 경험하지 않도록 하여 더 나은 사용자 경험을 제공할 수 있다. 하지만 **`useLayoutEffect`** 는 성능에 부정적인 영향을 미칠 수 있으므로, 반드시 필요한 경우에만 사용하는 것이 좋다.<br/><br/>
 
 # 함수형 컴포넌트와 클래스형 컴포넌트 비교
 
