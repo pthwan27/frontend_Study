@@ -36,7 +36,7 @@
 
 [getSnapshotBeforeUpdate](https://legacy.reactjs.org/docs/react-component.html#getsnapshotbeforeupdate): 업데이트 이전과 이후의 상태를 비교하여 추가 작업을 수행한다.
 
-⭐[**componentDidUpdate**](https://legacy.reactjs.org/docs/react-component.html#componentdidupdate): 컴포넌트가 업데이트된 후 호출된다.함수형 컴포넌트에서는 Hook을 사용하여 생명주기를 관리합니다. 대표적으로 **`useEffect`** Hook이 있습니다.<br/><br/>
+⭐[**componentDidUpdate**](https://legacy.reactjs.org/docs/react-component.html#componentdidupdate): 컴포넌트가 업데이트된 후 호출된다.<br/><br/>
 
 ## 언마운트(unmount): 컴포넌트가 화면에서 사라지는 시점
 
