@@ -46,7 +46,9 @@
 
 <img src="../../images/React/life-cycle/functional-component.png">
 
-함수형 컴포넌트에서는 Hook을 사용하여 생명주기를 관리합니다. 대표적으로 **`useEffect`** Hook이 있습니다.<br/><br/>
+함수형 컴포넌트에서는 Hook을 사용하여 생명주기를 관리한다. 직접적인 연관을 갖는 Hooks는 **`useEffect`**, **`useLayoutEffect`** 가 있다.
+나머지 Hooks, 예를 들어 `useState`, `useReducer`, `useContext`, `useMemo`, `useCallback` 등은 생명주기 메서드와 직접적으로 연관되어 있지는 않지만, `useEffect`와 함께 사용하여 컴포넌트의 상태 관리와 생명주기를 더 세밀하게 제어할 수 있다.
+<br/><br/>
 
 ## **useEffect Hook**
 
@@ -57,6 +59,12 @@
 - **`useEffect(() => {}, [dependency1, dependency2, ...])`**: 의존성 배열 내의 값 중 하나가 변경되면 effect가 재실행된다. (업데이트)
 - **`useEffect(() => { return () => { // 정리 로직 }; }, []);`**: 컴포넌트가 언마운트 될 때 정리 작업을 수행한다.<br/><br/>
 
+## useLayoutEffect
+
+**`useLayoutEffect`**는 **`useEffect`**와 매우 유사하고 사용 방법도 같지만, 실행 시점에 차이가 있다. **`useLayoutEffect`**는 **DOM 업데이트가 화면에 반영되기 직전에 실행**되며, 이는 클래스 컴포넌트의 **`componentDidMount`**와 **`componentDidUpdate`**와 더 유사한 실행 시점을 갖는다. 이 Hook은 주로 레이아웃의 변화를 측정하거나, DOM을 조작해야하는 경우에 사용된다.
+
+**`useLayoutEffect`**는 DOM 업데이트가 사용자에게 보이기 전에 실행되기 때문에, 사용자가 화면 상의 깜박임이나 레이아웃 이동을 경험하지 않도록 하여 더 나은 사용자 경험을 제공할 수 있다. 하지만 **`useLayoutEffect`**는 성능에 부정적인 영향을 미칠 수 있으므로, 반드시 필요한 경우에만 사용하는 것이 좋다.<br/><br/>
+
 # 함수형 컴포넌트와 클래스형 컴포넌트 비교
 
 | 분류       | 클래스형 컴포넌트      | 함수형 컴포넌트                  |
@@ -66,8 +74,6 @@
 | Mounting   | ComponenDidMount()     | useEffect() (빈 의존성 배열)     |
 | Updating   | componentDidUpdate()   | useEffect() (의존성 배열에 따라) |
 | UnMounting | componentWillUnmount() | useEffect() (정리 함수를 반환)   |
-
-- 나머지 컴포넌트 생명 주기관련 메서드는 useEffect와 다른 Hooks를 적절히 활용하여 비슷한 기능을 구현할 수 있다.<br/><br/><br/>
 
 # 참고
 
