@@ -1,10 +1,10 @@
-# 고차 컴포넌트(HOC)와 hooks
+# **고차 컴포넌트(HOC)와 hooks**
 
 [label](command:workbench.trust.manage)
 
-## HOC
+## **HOC**
 
-### 고차 컴포넌트란?
+### **고차 컴포넌트란?**
 
 고차 컴포넌트(HOC, Higher Order Component)는 컴포넌트 로직을 재사용하기 위한 React의 고급 기술입니다. 고차 컴포넌트(HOC)는 React API의 일부가 아니며, React의 구성적 특성에서 나오는 패턴입니다 <br/><br/>
 
@@ -20,7 +20,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 
 구체적인 예시로
 
-### withLogined
+### **withLogined**
 
 ```jsx
 import { useContext } from "react";
@@ -45,7 +45,7 @@ export default withLogined(UserInfo);
 
 또한 hover되어있는지도 hoc를 통해 확인할 수도 있습니다! <br/><br/>
 
-### withHover
+### **withHover**
 
 ```jsx
 import { useState } from "react";
@@ -103,15 +103,17 @@ export default withHover(ImageBox);
 
 ImageBox 컴포넌트에 withHover를 적용한 코드입니다!
 
-이미지에 마우스를 올릴 경우 이미지 타이틀이 페이지 상단에 표시되는 것을 확인할 수 있습니다.
+이미지에 마우스를 올릴 경우 이미지 타이틀이 페이지 상단에 표시되는 것을 확인할 수 있습니다.<br/>
 
-하지만 이런 HOC를 대신하여 CustomHook을 사용할 수도 있습니다!!
+### **HOC의 장점**
+
+반복적인 코드의 재사용이 용이합니다.
 
 <br/>
 
-## React Hooks
+## **React Hooks**
 
-### Hooks란???
+### **Hooks란???**
 
 기존 React 컴포넌트들이 작성되던 방식인 Class의 형태는 사람과 기계 양측 모두에게 좋지 않은 점들이 있었고 끊임없이 React 개발자들에게 문제를 야기해왔습니다.
 
@@ -164,8 +166,20 @@ export default UserInfo;
 ```
 
 이런식으로 사용하면 됩니다!
+<br/>
 
-### HOC vs Hooks
+### **Hooks의 장점**
+
+Hooks의 장점은 로직의 재사용이 가능하고 관리가 쉽다는 것입니다.
+함수 안에서 다른 함수를 호출하는 것으로 새로운 hook을 만들어 볼 수 있습니다.
+
+기존의 class component는 여러 단계의 상속으로 인해 전반적으로 복잡성과 오류 가능성을 증가시켰습니다.
+
+하지만 function component에 hooks에 도입되면서 class component가 가지고 있는 기능을 모두 사용할 수 있음은 물론이고 기존 class component 복잡성, 재사용성의 단점들까지 해결됩니다.
+
+---
+
+### **HOC vs Hooks**
 
 그렇다면 HOC, hooks는 무슨 차이일까요?
 
@@ -183,7 +197,7 @@ hooks를 사용한다면 이런 불필요한 depth를 줄일 수 있습니다.
 
 <br/>
 
-### 그러면 hooks만 쓰면 되는거 아닌가?
+### **그러면 hooks만 쓰면 되는거 아닌가?**
 
 그렇지만 Hooks가 HOC보다 나은 개념은 아니며, 두 기법의 장단점을 가지고 있습니다. 따라서 HOC를 적절히 활용해 중복코드를 제거하고, 컴포넌트의 조합을 통해 유연한 구조를 만들 수 있습니다.
 
