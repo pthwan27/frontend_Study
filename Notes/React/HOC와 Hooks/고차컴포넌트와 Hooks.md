@@ -1,7 +1,4 @@
 # 고차 컴포넌트(HOC)와 hooks
-
-[label](command:workbench.trust.manage)
-
 ## HOC
 
 ### 고차 컴포넌트란?
