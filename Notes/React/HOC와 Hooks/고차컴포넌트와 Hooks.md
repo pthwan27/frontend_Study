@@ -119,7 +119,8 @@ ImageBox 컴포넌트에 withHover를 적용한 코드입니다!
 
 이러한 문제들을 해결하고자 함수형 컴포넌트에서 state를 관리할 수 있도록 도와주는 recompose라는 라이브러리가 등장하였고, React 팀이 이 recompose를 인수하여 Hooks가 탄생하게 되었습니다.
 
-**★ Hooks의 역할은 대표적으로 useState, useEffect 등과 같은 라이브러리를 제공하여 함수형 React 컴포넌트에서 state를 관리할 수 없었던 문제를 해결하는 것이며, 그로 인해 React 개발자들이 좀 더 함수형 프로그래밍을 지향할 수 있게 되었습니다.**
+**★ Hooks의 역할은 대표적으로 useState, useEffect 등과 같은 라이브러리를 제공하여 함수형 React 컴포넌트에서 state를 관리할 수 없었던 문제를 해결하는 것이며, 그로 인해 React 개발자들이 좀 더 함수형 프로그래밍을 지향할 수 있게 되었습니다. <br/><br/>
+정리하자면 React Hooks는 함수형 컴포넌트에서 state관리와 Life Cycle을 다룰 수 있게하는 기술입니다.**
 
 위에 HOC를 사용해 withLogined를 적용한 코드를
 Hooks를 이용해 만들어보면
