@@ -52,12 +52,47 @@
 
 ## **useEffect Hook**
 
-**`useEffect`** 는 클래스 컴포넌트의 여러 생명주기 메서드를 결합한 것과 비슷하며, 마운팅, 업데이팅, 언마운팅 시점에 코드를 실행할 수 있다.
+**`useEffect`** 는 클래스 컴포넌트의 여러 생명주기 메서드(componentDidMount() + componentDidUpdate() + componentWillUnmount())를 결합한 것과 비슷하며, 마운팅, 업데이팅, 언마운팅 시점에 코드를 실행할 수 있다.
 
 - **`useEffect(() => {})`**: 렌더링 결과가 실제 DOM에 반영된 후마다 호출된다.
 - **`useEffect(() => {}, [])`**: 컴포넌트가 처음 나타날 때 한 번만 호출된다. (마운팅)
 - **`useEffect(() => {}, [dependency1, dependency2, ...])`**: 의존성 배열 내의 값 중 하나가 변경되면 effect가 재실행된다. (업데이트)
 - **`useEffect(() => { return () => { // 정리 로직 }; }, []);`**: 컴포넌트가 언마운트 될 때 정리 작업을 수행한다.<br/><br/>
+
+ex) 
+```
+componentDidMount() { 
+  this.updateList(this.props.id); 
+} 
+
+componentDidUpdate(prevProps) {
+  if(prevProps.id === this.props.id) return; 
+  this.updateList(this.props.id); 
+}
+
+=>
+
+useEffect(() => {
+  updateList(id);
+}, [id])
+```
+---
+```
+componentDidMount() {
+  documnet.body.style.overflow = "hidden";
+}
+componentWillUnmount() {
+  docuemnt.body.style.removeProperty('overflow');
+}
+
+=>
+
+useEffect(() => {
+  document.body.style.overflow = "hidden";
+  
+  return () => document.body.style.removeProperty("overflow");
+}, []);
+```
 
 ## useLayoutEffect
 
