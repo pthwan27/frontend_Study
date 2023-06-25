@@ -1,13 +1,7 @@
-<<<<<<< HEAD
+
 # **고차 컴포넌트(HOC)와 hooks**
 
-[label](command:workbench.trust.manage)
-
-## **HOC**
-=======
-# 고차 컴포넌트(HOC)와 hooks
-## HOC
->>>>>>> 707f4b94b7a3f238b33b464feea84cf590ac9fc5
+## 고차 컴포넌트(HOC)
 
 ### **고차 컴포넌트란?**
 
