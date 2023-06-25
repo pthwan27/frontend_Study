@@ -30,6 +30,5 @@
 - [실행 컨텍스트(Execution Context)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/execution-context.md)
 
 ## React
-- [고차컴포넌트(HOC)와 React Hooks](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/HOC%EC%99%80%20Hooks/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80%20Hooks.md)
-
+- [고차컴포넌트(HOC)와 React Hooks](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(HOC)%EC%99%80%20React%20Hooks.md)
 - [라이프사이클(life-cycle)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/life-cycle.md)
