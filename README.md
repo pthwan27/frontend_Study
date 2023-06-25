@@ -21,6 +21,15 @@
 - [동기와 비동기, 블로킹과 논블로킹](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md)
 ## JavaScript
 - Redux
-  - aa
+  - [redux의 라이프 사이클](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Redux/Redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4.md)
+  - [Redux Reducer는 왜 순수함수를 쓸까(feat. 얇은 복사, 깊은 복사)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Redux/Redux%20Reducer%EB%8A%94%20%EC%99%9C%20%EC%88%9C%EC%88%98%ED%95%A8%EC%88%98%EB%A5%BC%20%EC%93%B8%EA%B9%8C(feat.%20%EC%96%87%EC%9D%80%20%EB%B3%B5%EC%82%AC%2C%20%EA%B9%8A%EC%9D%80%20%EB%B3%B5%EC%82%AC).md)
+ 
+- [Ajax](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Ajax.md)
+- [호이스팅(Hoisting)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Hoisting.md)
+- [스코프(scope)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Scope.md)
+- [실행 컨텍스트(Execution Context)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/execution-context.md)
 
 ## React
+- [고차컴포넌트(HOC)와 React Hooks](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/HOC%EC%99%80%20Hooks/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80%20Hooks.md)
+
+- [라이프사이클(life-cycle)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/life-cycle.md)
