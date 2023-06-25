@@ -36,7 +36,7 @@
 
 [getSnapshotBeforeUpdate](https://legacy.reactjs.org/docs/react-component.html#getsnapshotbeforeupdate): 업데이트 이전과 이후의 상태를 비교하여 추가 작업을 수행한다.
 
-⭐[**componentDidUpdate**](https://legacy.reactjs.org/docs/react-component.html#componentdidupdate): 컴포넌트가 업데이트된 후 호출된다.함수형 컴포넌트에서는 Hook을 사용하여 생명주기를 관리합니다. 대표적으로 **`useEffect`** Hook이 있습니다.<br/><br/>
+⭐[**componentDidUpdate**](https://legacy.reactjs.org/docs/react-component.html#componentdidupdate): 컴포넌트가 업데이트된 후 호출된다.<br/><br/>
 
 ## 언마운트(unmount): 컴포넌트가 화면에서 사라지는 시점
 
@@ -52,18 +52,53 @@
 
 ## **useEffect Hook**
 
-**`useEffect`** 는 클래스 컴포넌트의 여러 생명주기 메서드를 결합한 것과 비슷하며, 마운팅, 업데이팅, 언마운팅 시점에 코드를 실행할 수 있다.
+**`useEffect`** 는 클래스 컴포넌트의 여러 생명주기 메서드(componentDidMount() + componentDidUpdate() + componentWillUnmount())를 결합한 것과 비슷하며, 마운팅, 업데이팅, 언마운팅 시점에 코드를 실행할 수 있다.
 
 - **`useEffect(() => {})`**: 렌더링 결과가 실제 DOM에 반영된 후마다 호출된다.
 - **`useEffect(() => {}, [])`**: 컴포넌트가 처음 나타날 때 한 번만 호출된다. (마운팅)
 - **`useEffect(() => {}, [dependency1, dependency2, ...])`**: 의존성 배열 내의 값 중 하나가 변경되면 effect가 재실행된다. (업데이트)
 - **`useEffect(() => { return () => { // 정리 로직 }; }, []);`**: 컴포넌트가 언마운트 될 때 정리 작업을 수행한다.<br/><br/>
 
+ex) 
+```
+componentDidMount() { 
+  this.updateList(this.props.id); 
+} 
+
+componentDidUpdate(prevProps) {
+  if(prevProps.id === this.props.id) return; 
+  this.updateList(this.props.id); 
+}
+
+=>
+
+useEffect(() => {
+  updateList(id);
+}, [id])
+```
+---
+```
+componentDidMount() {
+  documnet.body.style.overflow = "hidden";
+}
+componentWillUnmount() {
+  docuemnt.body.style.removeProperty('overflow');
+}
+
+=>
+
+useEffect(() => {
+  document.body.style.overflow = "hidden";
+  
+  return () => document.body.style.removeProperty("overflow");
+}, []);
+```
+
 ## useLayoutEffect
 
-**`useLayoutEffect`**는 **`useEffect`**와 매우 유사하고 사용 방법도 같지만, 실행 시점에 차이가 있다. **`useLayoutEffect`**는 **DOM 업데이트가 화면에 반영되기 직전에 실행**되며, 이는 클래스 컴포넌트의 **`componentDidMount`**와 **`componentDidUpdate`**와 더 유사한 실행 시점을 갖는다. 이 Hook은 주로 레이아웃의 변화를 측정하거나, DOM을 조작해야하는 경우에 사용된다.
+**`useLayoutEffect`** 는 **`useEffect`** 와 매우 유사하고 사용 방법도 같지만, 실행 시점에 차이가 있다. **`useLayoutEffect`** 는 **DOM 업데이트가 화면에 반영되기 직전에 실행**되며, 이는 클래스 컴포넌트의 **`componentDidMount`** 와 **`componentDidUpdate`** 와 더 유사한 실행 시점을 갖는다. 이 Hook은 주로 레이아웃의 변화를 측정하거나, DOM을 조작해야하는 경우에 사용된다.
 
-**`useLayoutEffect`**는 DOM 업데이트가 사용자에게 보이기 전에 실행되기 때문에, 사용자가 화면 상의 깜박임이나 레이아웃 이동을 경험하지 않도록 하여 더 나은 사용자 경험을 제공할 수 있다. 하지만 **`useLayoutEffect`**는 성능에 부정적인 영향을 미칠 수 있으므로, 반드시 필요한 경우에만 사용하는 것이 좋다.<br/><br/>
+**`useLayoutEffect`** 는 DOM 업데이트가 사용자에게 보이기 전에 실행되기 때문에, 사용자가 화면 상의 깜박임이나 레이아웃 이동을 경험하지 않도록 하여 더 나은 사용자 경험을 제공할 수 있다. 하지만 **`useLayoutEffect`** 는 성능에 부정적인 영향을 미칠 수 있으므로, 반드시 필요한 경우에만 사용하는 것이 좋다.<br/><br/>
 
 # 함수형 컴포넌트와 클래스형 컴포넌트 비교
 
