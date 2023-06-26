@@ -27,7 +27,7 @@
 - [동기와 비동기, 블로킹과 논블로킹](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md)
 
 - [web-security](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/web-security.md)
-
+- [브라우저 작동원리](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EC%9E%91%EB%8F%99%EC%9B%90%EB%A6%AC.md)
 ### JavaScript
 - Redux
   - [redux의 라이프 사이클](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Redux/Redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4.md)
