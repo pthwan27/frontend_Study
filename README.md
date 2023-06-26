@@ -26,6 +26,7 @@
 ### CS
 - [동기와 비동기, 블로킹과 논블로킹](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md)
 
+- [web-security](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/web-security.md)
 
 ### JavaScript
 - Redux
