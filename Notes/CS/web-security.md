@@ -40,6 +40,7 @@ Database에 고의적으로 오류를 발생 시켜 에러 출력을 통해 Data
 Database의 UNION 연산자를 사용하여 쿼리 결과값의 조합을 통해 정보를 파악한다. 전제 조건은 컬럼의 개수와 데이터 형식이 같아야한다.
 
 <img src="../../images/CS/web-security/Union Based SQL Injection1.png">
+<br/><br/>
 
 ### Union Based SQL Injection 시나리오
 
@@ -59,7 +60,7 @@ Database의 UNION 연산자를 사용하여 쿼리 결과값의 조합을 통해
 ## SQL Injection 대응 방안
 
 - **에러 메세지 노출 차단**하여 공격자가 에러 메세지로 정보를 알 수 없도록 한다.
-- **입력값 검증**을 통해 사용 가능한 특수 문자 제한를 제한하거나 `\n, \t, |, #, --, &`와 같은 특수 문자 필터링을 한다.
+- **입력값 검증**을 통해 사용 가능한 특수 문자를 제한하거나 `\n, \t, |, #, --, &`와 같은 특수 문자 필터링을 한다.
 
 ```sql
 input = input.replace("--", "");
