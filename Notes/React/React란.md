@@ -4,7 +4,7 @@
 
 시간이 지날수록 웹에서 사람들과 상호작용할 부분은 늘고 사용자가 원하는 기능 또한 많아지고 있습니다. 이러한 상황속에서 FE 개발자들이 기술적 한계를 느끼고 새로운 기술인 FE Framework가 나오게 됩니다.
 
-![FE의 기술 성장 ](../../images)
+![FE의 기술 성장 ](../../images/React/React%EB%9E%80/FE%20%EA%B8%B0%EC%88%A0%20%EC%84%B1%EC%9E%A5.png)
 
 FE의 기술 성장 
 
@@ -126,7 +126,7 @@ React를 사용하면 재사용 가능한 UI 구성요소를 만들 수 있습�
     - **SSR 
     서버쪽에서 렌더링 준비를 끝마친 상태로 클라이언트에 전달하는 방식입니다.**
     
-    ![Untitled](React%208813aa9ff4d74a628f5aa53ee6116acd/Untitled%201.png)
+    ![SSR](../../images/React/React%EB%9E%80/ssr.png)
     
     1. User가 Website 요청을 보냅니다.
     2. Server는 'Ready to Render'. 즉, 즉시 렌더링 가능한 html파일을 만듭니다.(리소스 체크, 컴파일 후 완성된 HTML 컨텐츠로 만든다.)
@@ -143,7 +143,7 @@ React를 사용하면 재사용 가능한 UI 구성요소를 만들 수 있습�
         즉, 서버는 요청을 받으면 클라이언트에 HTML과 JS를 보내줍니다.
         클라이언트는 그것을 받아 렌더링을 시작합니다.**
         
-        ![Untitled](React%208813aa9ff4d74a628f5aa53ee6116acd/Untitled%202.png)
+    ![CSR](../../images/React/React%EB%9E%80/csr.png)
         
         1. User가 Website 요청을 보냅니다.
         2. CDN이 HTML 파일과 JS로 접근할 수 있는 링크를 클라이언트로 보냅니다.
