@@ -24,6 +24,7 @@
 ## ✏️ Study
 
 ### CS
+- [CSR, SSR](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/CSR-SSR.md)
 - [동기와 비동기, 블로킹과 논블로킹](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md)
 
 - [web-security](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/web-security.md)
@@ -40,5 +41,6 @@
 
 
 ### React
+- [React란?](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/React%EB%9E%80.md)
 - [고차컴포넌트(HOC)와 React Hooks](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(HOC)%EC%99%80%20React%20Hooks.md)
 - [라이프사이클(life-cycle)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/life-cycle.md)
