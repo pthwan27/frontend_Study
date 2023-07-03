@@ -1,6 +1,7 @@
-# Next.js 에서 데이터를 가져오는 방법!
+# **Next.js 에서 데이터를 가져오는 방법!**
 Next에서 데이터를 가져오는 방법은 여러가지가 있습니다.
 
+<br/>
 
 # 1. **getServerSideProps(SSR)**
 
@@ -113,7 +114,9 @@ export async function getStaticProps() {
 export default Posts;
 ```
 
-# 2. **getStaticProps** - SSG(Static Site Generation)
+<br/>
+
+# 2. **getStaticProps - SSG(Static Site Generation)**
 
 ![사용예시](../../images/Next.js/Next%20js%20%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94%20%EB%B0%A9%EB%B2%95!/getStaticProps.png)
 
