@@ -31,7 +31,106 @@ console.log(something(3)); // 13
 function makeMultiplier(x) {
   return function (y) {
     return x * y;
- 링: 클로저를 사용하여 동적으로 함수를 생성할 수 있다. 즉, 함수를 공장처럼 사용하여 필요에 따라 다른 함수를 반환할 수 있다. 부분 적용을 통해 함수의 일부 인자를 미리 고정하여 새로운 함수를 생성하는데 사용할 수 있고, 커링을 통해 함수를 단일 인자만 받는 함수들의 연속으로 변환할 수도 있다.
+  };
+}
+
+let multiplyBy3 = makeMultiplier(3);
+
+console.log(multiplyBy3(4)); // 12
+```
+
+`makeMultiplier`는 매개변수 `x`를 받고, 익명 함수를 반환한다. 반환된 이 익명 함수는 `x`를 '기억'하고 있으며, 이를 이용해 자신에게 전달되는 `y`와 곱한다.
+
+`multiplyBy3` 변수는 `makeMultiplier` 함수에 3을 전달하여 얻은 함수를 저장한다. 이 시점에서, `multiplyBy3`는 클로저로, x를 3으로 기억하고 있는 함수를 참조하고 있다. `multiplyBy3(4)`를 호출하면, 클로저 덕분에 x가 여전히 3임을 기억하고, 3 \* 4, 즉 12를 반환한다.
+
+## 클로저와 반복문
+
+클로저와 반복문을 함께 사용할 때는 주의가 필요하다.
+
+```javascript
+for (var i = 0; i < 3; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
+}
+// 3 3 3
+```
+
+이 코드는 0, 1, 2를 출력할 것으로 예상할 수 있지만, 실제로는 3이 세 번 출력된다. 이유는 `setTimeout`에 전달된 함수가 클로저이며, `i`에 대한 참조를 캡처한다. 모든 타임아웃 콜백이 실행될 때 `i`는 이미 3이 되어있다.<br/><br/>
+
+### 해결 방법1
+
+**let 키워드**를 사용할 수 있다. let은 블록 스코프 변수를 생성하며, 각 반복마다 새로운 변수를 생성한다.
+
+```javascript
+for (let i = 0; i < 3; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
+}
+// 0 1 2
+```
+
+<br/><br/>
+
+### 해결 방법2
+
+즉시 실행 함수 표현식 (IIFE, Immediately Invoked Function Expression)을 사용하는 것이다. 이 방법은 var를 사용하는 구버전 자바스크립트에서도 동작한다.
+
+```javascript
+for (var i = 0; i < 3; i++) {
+  (function (i) {
+    setTimeout(function () {
+      console.log(i);
+    }, 1000);
+  })(i);
+}
+```
+
+위 코드에서는 각 반복마다 새로운 함수를 생성하고 즉시 호출하며, 현재의 i 값을 매개변수로 전달한다. 이렇게 하면 각 함수는 자체적으로 i 값을 캡처하고, 원하는 결과를 얻을 수 있다.<br/><br/>
+
+## 클로저 사용하는 방법
+
+클로저는 내부 함수가 외부 함수의 변수를 참조할 때 발생한다. **내부 함수를 외부로 반환**하면, 내부 함수는 외부 함수의 변수를 기억하는 클로저가 된다
+
+```javascript
+function createGreeting(greeting) {
+  return function (name) {
+    return `${greeting}, ${name}!`;
+  };
+}
+
+const sayHello = createGreeting('Hello');
+console.log(sayHello('John')); // 출력: "Hello, John!"
+```
+
+<br/><br/>
+
+## 클로저를 사용하는 이유
+
+- **데이터 은닉 및 캡슐화**: 클로저를 이용하여 특정 스코프 내부에 변수를 숨기고, 공개적으로 접근 가능한 함수를 통해서만 그 변수에 접근할 수 있도록 만들 수 있다. 이를 통해 객체 지향 프로그래밍의 캡슐화 개념을 구현할 수 있다.
+
+  ```javascript
+  function createCounter() {
+    let count = 0;
+    return {
+      increment: function () {
+        count++;
+      },
+      getCount: function () {
+        return count;
+      },
+    };
+  }
+
+  const counter = createCounter();
+  counter.increment();
+  console.log(counter.getCount()); // 출력: 1
+  ```
+
+  <br/><br/>
+
+- 함수 팩토리와 부분 적용, 커링: 클로저를 사용하여 동적으로 함수를 생성할 수 있다. 즉, 함수를 공장처럼 사용하여 필요에 따라 다른 함수를 반환할 수 있다. 부분 적용을 통해 함수의 일부 인자를 미리 고정하여 새로운 함수를 생성하는데 사용할 수 있고, 커링을 통해 함수를 단일 인자만 받는 함수들의 연속으로 변환할 수도 있다.
 
   ```javascript
   // 부분 적용
