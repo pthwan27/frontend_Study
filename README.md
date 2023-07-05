@@ -25,6 +25,7 @@
 
 ### CS
 - [CSR, SSR](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/CSR-SSR.md)
+- [Cookies & Session](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/Cookie%26Session.md)
 - [동기와 비동기, 블로킹과 논블로킹](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md)
 
 - [web-security](https://github.com/pthwan27/frontend_Study/blob/main/Notes/CS/web-security.md)
@@ -37,14 +38,15 @@
 - [Ajax](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Ajax.md)
 - [호이스팅(Hoisting)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Hoisting.md)
 - [스코프(scope)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Scope.md)
-- [실행 컨텍스트(Execution Context)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/execution-context.md)
 - [클로저(closure)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/closure.md)
+- [실행 컨텍스트(Execution Context)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/execution-context.md)
 
 
 ### React
 - [React란?](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/React%EB%9E%80.md)
-- [고차컴포넌트(HOC)와 React Hooks](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(HOC)%EC%99%80%20React%20Hooks.md)
 - [라이프사이클(life-cycle)](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/life-cycle.md)
+- [고차컴포넌트(HOC)와 React Hooks](https://github.com/pthwan27/frontend_Study/blob/main/Notes/React/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(HOC)%EC%99%80%20React%20Hooks.md)
+
 
 ### Next.js
 - [Next.js 에서 데이터를 가져오는 방법!](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Next.js/Next%20js%20%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94%20%EB%B0%A9%EB%B2%95!.md)
