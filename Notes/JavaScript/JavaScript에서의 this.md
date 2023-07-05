@@ -6,9 +6,10 @@
 
 ![this설명](../../images/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this/this%20%EC%84%A4%EB%AA%85.png)
 
-만약 메서드가 자신이 속한 객체의 Property를 참조하려면, 자신이 속한 객체(Object)를 가리키는 식별자를 참조할 수 있어야합니다!
+만약 메서드가 자신이 속한 객체의 Property를 참조하려면, 자신이 속한 객체(Object)를 가리키는 식별자를 참조할 수 있어야한다!
 
-이럴 때 다음과 같이 직접적인 객체 이름으로 명시할 수 도 있지만 
+이럴 때 다음과 같이 직접적인 객체 이름으로 명시할 수 도 있지만
+
 ```jsx
 const someone = {
 	name: 'mario',
@@ -33,9 +34,7 @@ const someone = {
 
 ![this의 실행 컨텍스트](../../images/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this/this%EC%9D%98%20%EC%8B%A4%ED%96%89%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8.png)
 
-여기서 printThis() 함수를 호출하면 실행컨텍스트가 생성되고
-
-**this**는 실행 컨텍스트가 생성될 때 함께 결정되기 때문에 **this**는 함수를 호출할 때 결정될 수 있다고 할 수 있습니다.
+여기서 printThis() 함수를 호출하면 실행컨텍스트가 생성되고<br/> **this**는 실행 컨텍스트가 생성될 때 함께 결정되기 때문에 **this**는 함수를 호출할 때 결정될 수 있다고 할 수 있습니다.
 
 
 <br/>
@@ -126,8 +125,6 @@ me.printName();
 이를 해결하기 위해 위와 같이 this로 사용하고자 하는 객체를 변수에 할당하여 사용할 수 있는데 위와 같은 경우에 mario가 출력됩니다.
 
 하지만 **권장하는 방법은 아닙니다.**
-
-
 <br/>
 
 ### **2. 메서드 호출 - 암시적 바인딩**
@@ -162,7 +159,7 @@ const me = new Someone('mario');
 
 ### **4. apply/call/bind 메서드에 의한 간접 호출 - 명시적 바인딩**
 
-3가지의 메소드는 Function.prototype 의 메서드로써 모든 함수가 상속받아 사용할 수 있습니다.
+3가지의 메소드는 Function.prototype 의 메서드로써 <br/> 모든 함수가 상속받아 사용할 수 있습니다.
 
 이중 apply, call은 특징이 비슷합니다.
 
@@ -197,14 +194,14 @@ someone.printName.bind({ name : 'luigi' })();
 ```
 
 `someone.printName`
-printName을 someone의 메소드를 호출하면서 this를 someone으로 암시적 바인딩
+printName을 someone의 메소드를 호출하면서 <br/> this를 someone으로 암시적 바인딩
 `this.name = ‘mario’`
 
 `bind({ name : 'luigi' })`
-bind 메서드로 this를 ‘luigi’라는 이름을 가진 객체로 명시적 바인딩
+bind 메서드로 this를 ‘luigi’라는 이름을 가진 객체로 <br/> 명시적 바인딩
 `this.name = ‘luigi’`
 
-이 경우 명시적 바인딩이 된 luigi가 나오는데 명시적 바인딩이 암시적 바인딩보다 우선순위가 높기 때문입니다.
+이 경우 명시적 바인딩이 된 luigi가 나오는데 <br/> 명시적 바인딩이 암시적 바인딩보다 우선순위가 높기 때문입니다.
 
 <br/>
 
@@ -225,11 +222,11 @@ someone = new setNameBindSomeone('luigi');
 ```
 
 `setName.bind(someone);`
-setName 함수에 someone객체를 명시적 바인딩하는 함수
+setName 함수에 someone객체를 <br/> 명시적 바인딩하는 함수
 `this.name = ‘mario’`
 
 `new setNameBindSomeone('luigi');`
-new 바인딩 
+<br/> new 바인딩 
 `this.name = ‘luigi’`
 
 위의 경우 `luigi`가 나옵니다.
