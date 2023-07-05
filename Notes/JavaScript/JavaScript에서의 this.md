@@ -6,10 +6,9 @@
 
 ![this설명](../../images/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this/this%20%EC%84%A4%EB%AA%85.png)
 
-만약 메서드가 자신이 속한 객체의 Property를 참조하려면, 자신이 속한 객체(Object)를 가리키는 식별자를 참조할 수 있어야한다!
+만약 메서드가 자신이 속한 객체의 Property를 참조하려면, 자신이 속한 객체(Object)를 가리키는 식별자를 참조할 수 있어야합니다!
 
-이럴 때 다음과 같이 직접적인 객체 이름으로 명시할 수 도 있지만
-
+이럴 때 다음과 같이 직접적인 객체 이름으로 명시할 수 도 있지만 
 ```jsx
 const someone = {
 	name: 'mario',
