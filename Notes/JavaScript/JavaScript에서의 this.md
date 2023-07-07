@@ -257,7 +257,7 @@ ES6에서 도입된 화살표 함수
 ```jsx
 const someone = {
 	name : 'mario',
-	printName : () => {
+	printName: () => {
 		console.log(this.name);
 	},
 };
@@ -268,14 +268,14 @@ someone.printName();
 `someone.printName();` 암시적 바인딩에 의해 this가 someone으로 바인딩 되었다고 생각할 수도 있지만! <br/>
 실행해본다면 브라우저에서는 빈 문자열, 노드에서는 undefined가 나옵니다.
 
-이는 스코프 체인에 의해  따라간 가장 가까운  this가 전역객체이기 때문입니다.
+이는 스코프 체인에 의해 따라간 가장 가까운 this가 전역객체이기 때문입니다.
 
 ![this 화살표 함수 스코프체이닝 과정](../../images/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this/%ED%99%94%EC%82%B4%ED%91%9C%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C%EC%9D%98%20this%20%EC%8A%A4%EC%BD%94%ED%94%84%20%EC%B2%B4%EC%9D%B8.png)
 
 때문에 가장 가까운 상위 scope의 this가 전역객체일 때에는 추상메서드를 쓰는 것이 좋습니다.
 
 ```jsx
-	printName() => {
+	printName() {
 		console.log(this.name);
 	},
 ```
