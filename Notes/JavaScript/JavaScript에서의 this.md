@@ -283,7 +283,7 @@ someone.printName();
 
 ## **클래스에서의 this**
 
-앞에 설명에서 **엄격모드(strict mode)**일 때 기본 바인딩이 전역객체가 아닌 undefined가 된다고 설명했습니다. 
+앞에 설명에서 **엄격모드(strict mode)** 일 때 기본 바인딩이 전역객체가 아닌 undefined가 된다고 설명했습니다. 
 
 클래스에서는 **strict mode**가 기본적으로 적용됩니다.
 
