@@ -311,7 +311,7 @@ obj.greetings();
 이렇게 한다면 `good evening`이 출력됩니다
 
 ```jsx
-class helloWorld {
+class helloWorld2 {
     greetings() {
         function test() {
             console.log(this.word);
@@ -320,8 +320,8 @@ class helloWorld {
     }
 };
 
-let obj = new helloWorld();
-obj.greetings(); 
+let obj2 = new helloWorld2();
+obj2.greetings(); 
 ```
 
 하지만 이런식으로 일반함수를 선언하고 출력한다면 undefined가 나오는데요.
