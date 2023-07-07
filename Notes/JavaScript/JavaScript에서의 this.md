@@ -172,7 +172,7 @@ Function.prototype.call(thisArg, arg1, arg2, …)
 this로 사용할 객체 전달하며 알아서 함수를 호출하는 점에서 동일하게 동작합니다.
 
 ```jsx
-Function.prototype.call(thisArg, arg1, arg2, …)
+Function.prototype.bind(thisArg, arg1, arg2, …)
 ```
 
 bind도 apply, call 처럼 this로 사용할 객체와 인수를 전달받지만 함수를 호출해주지 않습니다.
