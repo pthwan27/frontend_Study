@@ -6,7 +6,7 @@ SQL 삽입. SQL 주입이라고도 하며 코드 인젝션의 기법 중 하나�
 
 ## SQL Injection 시나리오
 
-<img src="../../images/CS/web-security/SQL-Injection.png">
+<img src="../../images/Web/web-security/SQL-Injection.png">
 
 ```sql
 select * from member
@@ -31,7 +31,7 @@ where id = 'frontStudy' or 1 = 1 #
 
 ## Error Based SQL Injection
 
-<img src="../../images/CS/web-security/Error Based SQL Injection.png">
+<img src="../../images/Web/web-security/Error Based SQL Injection.png">
 
 Database에 고의적으로 오류를 발생 시켜 에러 출력을 통해 Database 구조를 파악하고 필요한 정보를 습득한다.<br/><br/>
 
@@ -39,18 +39,18 @@ Database에 고의적으로 오류를 발생 시켜 에러 출력을 통해 Data
 
 Database의 UNION 연산자를 사용하여 쿼리 결과값의 조합을 통해 정보를 파악한다. 전제 조건은 컬럼의 개수와 데이터 형식이 같아야한다.
 
-<img src="../../images/CS/web-security/Union Based SQL Injection1.png">
+<img src="../../images/Web/web-security/Union Based SQL Injection1.png">
 <br/><br/>
 
 ### Union Based SQL Injection 시나리오
 
-<img src="../../images/CS/web-security/Union Based SQL Injection2.png">
+<img src="../../images/Web/web-security/Union Based SQL Injection2.png">
 
 😈공격자: 컬럼이 몇개인지 하나씩 넣어보면서 알아봐야지~
 
 😈공격자 : 컬럼이 7개이구나! 추가로 공격해야지~
 
-<img src="../../images/CS/web-security/Union Based SQL Injection3.png">
+<img src="../../images/Web/web-security/Union Based SQL Injection3.png">
 
 😈공격자: version()을 통해서 버전도 알아봐야지~
 
@@ -91,7 +91,7 @@ input = input.replace(",", "");
 
 `<script> alert(document.cookie); </script>`
 
-<img src="../../images/CS/web-security/Stored XSS.png">
+<img src="../../images/Web/web-security/Stored XSS.png">
 
 1. 블로그 작성 글에 스크립트문을 넣는다.
 2. 글은 정상적으로 작성되지만 이 것을 조회한 사용자는 사용자의 쿠키값이 작성된 팝업창을 볼 수 있다.<br/><br/>
@@ -102,9 +102,9 @@ input = input.replace(",", "");
 
 공격자는 악성 스크립트를 포함한 URL을 희생자에게 보내고, 희생자가 이를 클릭하면 웹 애플리케이션은 이 스크립트를 즉시 실행한다.
 
-<img src="../../images/CS/web-security/Reflected XSS1.png">
+<img src="../../images/Web/web-security/Reflected XSS1.png">
 
-<img src="../../images/CS/web-security/Reflected XSS2.png">
+<img src="../../images/Web/web-security/Reflected XSS2.png">
 
 1. 공격자가 스크립트가 담긴 url을 주소 변환을 통해 숨긴다.
 2. 사용자를 속일 수 있는 메일에 담아서 보낸다.
@@ -115,7 +115,7 @@ input = input.replace(",", "");
 
 서비스의 스크립트를 이용하여 DOM에 악의적인 스크립트가 노출되도록 공격하는 방법이다. Relected XSS와 유사해보이지만 서버를 타지 않고 DOM을 조작할 수 있기 때문에 문제를 찾기 힘들다.
 
-<img src="../../images/CS/web-security/dom-based-xss.png">
+<img src="../../images/Web/web-security/dom-based-xss.png">
 <br/><br/>
 
 ## XSS 대응방안
@@ -150,7 +150,7 @@ CSRF 공격이 이루어지려면 다음 조건이 만족되어야 한다.
 
 ## CSRF 시나리오
 
-<img src="../../images/CS/web-security/csrf.jpg">
+<img src="../../images/Web/web-security/csrf.jpg">
 
 페이스북에 글을 쓸 때 아래 코드와 같은 형식으로 전송된다고 예를 들자.
 
@@ -177,7 +177,7 @@ CSRF 공격이 이루어지려면 다음 조건이 만족되어야 한다.
 
 **브라우저에서 자바스크립트를 삽입시키는 공격**이다. 브라우저에서 제공하는 Console을 통해 조작 가능하다. 만약 Client-Side에 민감한 데이터를 넣어놨다면 해당 공격을 통해 탈취가 가능하다.
 
-<img src="../../images/CS/web-security/javascript-injection.png">
+<img src="../../images/Web/web-security/javascript-injection.png">
 <br/><br/>
 
 ## JavaScript Injection 대응방안
