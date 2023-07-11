@@ -8,7 +8,7 @@
   - safari, chrome 등 각각 다른 쿠키가 발행된다.
 - 다른 도메인을 대신하여 쿠키 발급 불가
 
-    <img src="../../images/CS/Cookie&Session/cookie.png">
+    <img src="../../images/web/Cookie&Session/cookie.png">
 
   - 예를들면 페이스북은 인스타그램의 쿠키를 대신해서 발행할 수 없다.
 
@@ -20,7 +20,7 @@
 
 ## 동작방식
 
-<img src="../../images/CS/Cookie&Session/cookie2.png">
+<img src="../../images/web/Cookie&Session/cookie2.png">
 
 1. 클라이언트가 서버측에 요청을 보낸다.
 2. 요청을 받은 서버는 브라우저에게 정보를 받은 다음에 브라우저에 대한 정보를 쿠키안에 넣는다. 그 후 클라이언트에게 응답과 함께 쿠키를 보낸다.
@@ -38,7 +38,7 @@
 
 ### 첫 로그인
 
-<img src="../../images/CS/Cookie&Session/cookie-login.png">
+<img src="../../images/web/Cookie&Session/cookie-login.png">
 
 1. 클라이언트는 instagram.com에 로그인을 하기 위해서 email과 password를 요청으로 보낸다.
 2. instagram.com은 email과 password를 보고 DB에서 어떤 유저인지 확인을 하고 userId를 찾는다. 서버는 유저의 id가 1이라는 것을 쿠키에 넣어보낸다. + 추가적으로 만료기간도 같이 보낸다.
@@ -47,7 +47,7 @@
 
 ### 로그인 유지
 
-<img src="../../images/CS/Cookie&Session/cookie-login2.png">
+<img src="../../images/web/Cookie&Session/cookie-login2.png">
 
 1. instagram.com에 접속하기 전에 브라우저의 쿠키 저장소에 해당 도메인의 쿠키가 있는지 확인한다
 2. 쿠키를 브라우저에 전달
@@ -74,7 +74,7 @@
 
 ### 첫 로그인
 
-<img src="../../images/CS/Cookie&Session/session1.png">
+<img src="../../images/web/Cookie&Session/session1.png">
 
 1. 클라이언트는 instagram.com에 로그인을 하기 위해서 email과 password를 요청으로 보낸다.
 2. 서버의 sessionDB는 userId와 sessionId가 매칭되어있다. 클라이언트 요청으로 받아진 email과 password를 확인 후 검증되었다면 userId를 sessionDB에서 검색한다. 검색이 된 sessionId를 반환하여 쿠키에 담아 보낸다.
@@ -82,12 +82,13 @@
 
 ### 로그인 유지
 
-<img src="../../images/CS/Cookie&Session/session2.png">
+<img src="../../images/web/Cookie&Session/session2.png">
 
 1. 해당 도메인의 쿠키를 서버에 보내 instagram.com에 접속을 시도한다.
 2. 서버는 session ID를 보고 만료되지 않았다면 session ID에 매칭되는 유저가 frontStudy임을 확인하고 로그인된 상태의 페이지를 클라이언트에게 보여준다.
 
 ## 세션을 서버에 두는 이유
+
 쿠키에는 세션 ID만 저장하고, 이 ID를 사용해 서버 측에서 사용자 데이터를 찾음으로써 사용자 정보가 클라이언트에 노출되지 않음으로써 보안성을 확보한다. <br/><br/>
 
 ## 세션 단점
@@ -98,7 +99,9 @@
 ⇒ 서버 리소스와 처리 시간이 많이 필요하므로, 비용 문제를 해결하기 위해 토큰 기반 인증(예: JWT)을 사용할 수 있다. <br/><br/>
 
 # 정리
+
 쿠키
+
 - **사용자 브라우저에 저장**됨
 - **key, value로 구성**
 - 통신 시 **HTTP 헤더**에 포함하여 서버에 전송됨
@@ -106,6 +109,7 @@
 - 사용자 브라우저에 저장된 값을 확인하기 때문에 **보안성이 낮음**
 
 세션
+
 - **서버에서 관리**
 - 클라이언트에 **세션ID 부여**, 브라우저 종료할 때까지 인증상태 유지됨
 - 서버에 저장되므로 데이터 탈취가 어려움, **보안성이 비교적 높음**
