@@ -1,4 +1,5 @@
 # **Next.js 에서 데이터를 가져오는 방법!**
+
 Next에서 데이터를 가져오는 방법은 여러가지가 있습니다.
 
 <br/>
@@ -6,6 +7,7 @@ Next에서 데이터를 가져오는 방법은 여러가지가 있습니다.
 # 1. **getServerSideProps(SSR)**
 
 → 서버에서만 실행되고, 브라우저에서는 실행되지 않기 때문에 브라우저에 로그가 찍히지 않습니다.
+
 ```jsx
 /*
     context object 에 있는 데이터
@@ -21,25 +23,27 @@ Next에서 데이터를 가져오는 방법은 여러가지가 있습니다.
 
 export async function getServerSideProps(context) {
   return {
-    props: {}, 				// 컴포넌트가 받을 props
-    revalidate: 0, 			// 페이지가 재생성될 지연 시간
-    notFound: false,			// true일 경우 404
-    redirect: { 			// 리다이렉트할 페이지의 경로
-    	destination: '/'   		// 리다이렉트 경로
+    props: {}, // 컴포넌트가 받을 props
+    revalidate: 0, // 페이지가 재생성될 지연 시간
+    notFound: false, // true일 경우 404
+    redirect: {
+      // 리다이렉트할 페이지의 경로
+      destination: "/", // 리다이렉트 경로
     },
-  }
+  };
 }
 ```
+
 > pre-render란 빌드할 때 특정 페이지를 미리 HTML을 만들어주는 기능
 
 <br/>
 
 **getServerSideProps**는 페이지만 사용 가능합니다. 페이지가 아닌 파일
-(_app, _document)에서는 사용할 수 없습니다. 
+(\_app, \_document)에서는 사용할 수 없습니다.
 
 **getServerSideProps**는 서버에서만 실행되어서 브라우저에서 로그를 확인할 수 없습니다.
 
-**getServerSideProps**가 선언된 페이지는 빌드와 상관없이 매번 페이지에 들어올 때마다 데이터를 서버에 요청합니다.  그리고 반환한 props를 이용해서 렌더링 합니다. 
+**getServerSideProps**가 선언된 페이지는 빌드와 상관없이 매번 페이지에 들어올 때마다 데이터를 서버에 요청합니다. 그리고 반환한 props를 이용해서 렌더링 합니다.
 \
 <br/>
 
@@ -58,7 +62,7 @@ export async function getServerSideProps(context) {
 ```jsx
 // pages/profile/[id].js
 
-import axios from 'axios';
+import axios from "axios";
 
 function Profile({ user }) {
   return (
@@ -75,8 +79,8 @@ export async function getServerSideProps(context) {
   const user = response.data;
   return {
     props: {
-      user
-    }
+      user,
+    },
   };
 }
 
@@ -88,12 +92,12 @@ export default Profile;
 ```jsx
 // pages/posts.js
 
-import axios from 'axios';
+import axios from "axios";
 
 function Posts({ posts }) {
   return (
     <ul>
-      {posts.map(post => (
+      {posts.map((post) => (
         <li key={post.id}>{post.title}</li>
       ))}
     </ul>
@@ -101,13 +105,13 @@ function Posts({ posts }) {
 }
 
 export async function getStaticProps() {
-  const response = await axios.get('https://api.example.com/posts');
+  const response = await axios.get("https://api.example.com/posts");
   const posts = response.data;
   return {
     props: {
-      posts
+      posts,
     },
-    revalidate: 60 // 1분마다 캐시 갱신
+    revalidate: 60, // 1분마다 캐시 갱신
   };
 }
 
@@ -118,11 +122,9 @@ export default Posts;
 
 # 2. **getStaticProps - SSG(Static Site Generation)**
 
-![사용예시](../../images/Next.js/Next%20js%20%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94%20%EB%B0%A9%EB%B2%95!/getStaticProps.png)
-
+![사용예시](../../../images/Library&Framework/Next.js/Next%20js%20%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94%20%EB%B0%A9%EB%B2%95!/getStaticProps.png)
 
 <br/>
-
 
 ```jsx
 /*
@@ -136,24 +138,22 @@ export default Posts;
     previewData: setPreviewData에서 설정한 데이터
 */
 
-
 export async function getStaticProps(context) {
   return {
-    props: {}, 				// 컴포넌트가 받을 props
-    revalidate: 10, 			// 페이지가 재생성될 지연 시간
-    notFound: false,			// true일 경우 404
-    redirect: { 			// 리다이렉트할 페이지의 경로
-    	destination: '/'   		// 리다이렉트 경로
+    props: {}, // 컴포넌트가 받을 props
+    revalidate: 10, // 페이지가 재생성될 지연 시간
+    notFound: false, // true일 경우 404
+    redirect: {
+      // 리다이렉트할 페이지의 경로
+      destination: "/", // 리다이렉트 경로
     },
-  }
+  };
 }
-
 ```
-
 
 **getStaticProps**은 SSG 으로 만들기 위해 사용하며,프로젝트가 빌드될 때 데이터를 불러옵니다.(SEO에 유리)
 
-**getStaticProps**는 페이지에서만 사용 가능합니다, 페이지가 아닌 파일에서는 사용할 수 없습니다(_app, _document 등)
+**getStaticProps**는 페이지에서만 사용 가능합니다, 페이지가 아닌 파일에서는 사용할 수 없습니다(\_app, \_document 등)
 
 **getStaticProps**는 매번 데이터를 요청하지 않기 때문에 업데이트가 잦지 않은 static한 페이지일 경우 추천합니다.
 
@@ -161,7 +161,7 @@ export async function getStaticProps(context) {
 
 → 사용자의 요청보다 먼저 build 시간에 필요한 데이터를 가져올 때
 
-→ 데이터를 공개적으로 캐시할 수 있을 때 
+→ 데이터를 공개적으로 캐시할 수 있을 때
 
 → 페이지는 미리 렌더링되어야 하고(SEO의 경우) 매우 빨라야 할 때
 
@@ -175,7 +175,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
 	const res = await fetch(...);
     const posts = await res.json();
-    
+
     const paths = posts.map((post)) => ({
     	params: { id: post.id }
     });
@@ -209,8 +209,6 @@ export default function Post({ post }) {
 
 </br>
 
-
-
 **getStaticPaths** 는 동적 경로를 이용해서 페이지를 만들고 싶은데 SSG를 사용하고 싶을 때 getStaticProps 를 같이 사용하면서 빌드 타임 때 정적으로 렌더링 할 path를 설정해줍니다.
 
 **getStaticPaths** 는 **getServerSideProps** 와 사용할 수 없습니다. 무조건 **getStaticProps** 와 함께 사용해야 합니다.
@@ -223,7 +221,7 @@ paths는 어떤 경로가 pre-render될지 결정합니다.
 
 → 만약 pages/posts[id].js 이라는 이름의 동적 라우팅을 사용하는 페이지가 있다면 아래와 같이 사용합니다. 그러면 빌드하는 동안 /posts/1 , /posts/2를 생성하게 됩니다!!
 
-![Untitled](../../images/Next.js/Next%20js%20%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94%20%EB%B0%A9%EB%B2%95!/paths.png)
+![Untitled](../../../images/Library&Framework/Next.js/Next%20js%20%EC%97%90%EC%84%9C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%EA%B0%80%EC%A0%B8%EC%98%A4%EB%8A%94%20%EB%B0%A9%EB%B2%95!/paths.png)
 
 ## **params**
 
@@ -233,7 +231,7 @@ paths는 어떤 경로가 pre-render될지 결정합니다.
 
 ## **fallback**
 
-**false** 인 경우  paths에 등록되지 않은 경로로 들어가면 404 페이지가 됩니다. 이 옵션은 생성할 path가 적거나 새로운 페이지가 자주 추가되지 않는 경우에 유용합니다.
+**false** 인 경우 paths에 등록되지 않은 경로로 들어가면 404 페이지가 됩니다. 이 옵션은 생성할 path가 적거나 새로운 페이지가 자주 추가되지 않는 경우에 유용합니다.
 
 **true** 인 경우 paths에 등록되지 않은 경로로 들어가면 404 페이지가 되는 대신에 별도의 컴포넌트를 보여줄 수 있습니다.(router.isFallback으로 감지) 그 후 getStaticProps 를 통해 데이터를 가져오고 props를 가져오면 정적 페이지를 생성합니다. 당시에는 pre-render가 되지 않지만 한번 렌더링 후부터는 pre-render에 포함됩니다. (와디즈의 펀딩처럼 계속적으로 상품이 등록될 때 유용한 기능입니다.)
 

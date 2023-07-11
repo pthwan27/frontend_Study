@@ -8,7 +8,7 @@
 
 # 클래스 컴포넌트 생명주기
 
-<img src="../../images/React/life-cycle/class-component.png">
+<img src="../../../images/Library&Framework/React/life-cycle/class-component.png">
 
 클래스 컴포넌트의 생명주기는 세 가지 단계로 나눈다.
 
@@ -44,7 +44,7 @@
 
 # 함수형 컴포넌트 생명주기
 
-<img src="../../images/React/life-cycle/functional-component.png">
+<img src="../../../images/Library&Framework/React/life-cycle/functional-component.png">
 
 함수형 컴포넌트에서는 Hook을 사용하여 생명주기를 관리한다. 직접적인 연관을 갖는 Hooks는 **`useEffect`**, **`useLayoutEffect`** 가 있다.
 나머지 Hooks, 예를 들어 `useState`, `useReducer`, `useContext`, `useMemo`, `useCallback` 등은 생명주기 메서드와 직접적으로 연관되어 있지는 않지만, `useEffect`와 함께 사용하여 컴포넌트의 상태 관리와 생명주기를 더 세밀하게 제어할 수 있다.
@@ -59,15 +59,16 @@
 - **`useEffect(() => {}, [dependency1, dependency2, ...])`**: 의존성 배열 내의 값 중 하나가 변경되면 effect가 재실행된다. (업데이트)
 - **`useEffect(() => { return () => { // 정리 로직 }; }, []);`**: 컴포넌트가 언마운트 될 때 정리 작업을 수행한다.<br/><br/>
 
-ex) 
+ex)
+
 ```
-componentDidMount() { 
-  this.updateList(this.props.id); 
-} 
+componentDidMount() {
+  this.updateList(this.props.id);
+}
 
 componentDidUpdate(prevProps) {
-  if(prevProps.id === this.props.id) return; 
-  this.updateList(this.props.id); 
+  if(prevProps.id === this.props.id) return;
+  this.updateList(this.props.id);
 }
 
 =>
@@ -76,7 +77,9 @@ useEffect(() => {
   updateList(id);
 }, [id])
 ```
+
 ---
+
 ```
 componentDidMount() {
   documnet.body.style.overflow = "hidden";
@@ -89,7 +92,7 @@ componentWillUnmount() {
 
 useEffect(() => {
   document.body.style.overflow = "hidden";
-  
+
   return () => document.body.style.removeProperty("overflow");
 }, []);
 ```

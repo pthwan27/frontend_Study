@@ -16,11 +16,11 @@
 
 ```jsx
 function cal(type, a, b) {
-  if (type === 'add') {
+  if (type === "add") {
     return a + b;
-  } else if (type === 'subtract') {
+  } else if (type === "subtract") {
     return a - b;
-  } else if (type === 'multiply') {
+  } else if (type === "multiply") {
     return a * b;
   } else {
     return a / b;
@@ -29,10 +29,10 @@ function cal(type, a, b) {
 
 var four = 4;
 var seven = 7;
-cal('add', 4, 7);
+cal("add", 4, 7);
 ```
 
-<img src="../../images/JavaScript/execution-context/callstack.png">
+<img src="../../../images/Language/JavaScript/execution-context/callstack.png">
 
 위의 그림을 간단하게 설명해보겠다.
 
@@ -94,15 +94,15 @@ foo();
 // Reference Error: w is not defined
 ```
 
-<img src="../../images/JavaScript/execution-context/outer.png">
+<img src="../../../images/Language/JavaScript/execution-context/outer.png">
 
 outer는 이전 렉시컬 환경을 가리킨다. 즉, 함수는 자신이 선언된 위치를 기억하는데, 이것을 기억하고 있는 것이 바로 outer이다.</br></br>
 
-<img src="../../images/JavaScript/execution-context/outer2.png">
+<img src="../../../images/Language/JavaScript/execution-context/outer2.png">
 
 이 outer를 통해 함수는 자신이 선언된 렉시컬 환경과 그 환경의 외부 환경을 참조할 수 있으며, 이를 통해 스코프 체인을 형성하게 된다.</br></br>
 
-<img src="../../images/JavaScript/execution-context/lexical.png">
+<img src="../../../images/Language/JavaScript/execution-context/lexical.png">
 
 이러한 메커니즘 덕분에 함수는 자신이 어디서 호출되었는지가 아니라 어디에서 선언되었는지에 따라 상위 스코프를 결정하게 되는데 이를 렉시컬 스코핑 이라고한다.</br></br>
 
@@ -149,8 +149,8 @@ ES6부터 this의 바인딩이 Lexical Environment 안에 있는 Record 안에�
 
 [https://www.youtube.com/watch?v=EWfujNzSUmw](https://www.youtube.com/watch?v=EWfujNzSUmw)
 
-[https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-javascript-b57c979341a5](https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-javascript-b57c979341a5)
+[https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-Language/JavaScript-b57c979341a5](https://betterprogramming.pub/execution-context-lexical-environment-and-closures-in-Language/JavaScript-b57c979341a5)
 
-[https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/execution-context.md](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/execution-context.md)
+[https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/Language/JavaScript/execution-context.md](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/Language/JavaScript/execution-context.md)
 
 [https://velog.io/@wooogie/실행-컨텍스트-Execution-Context](https://velog.io/@wooogie/%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-Execution-Context)
