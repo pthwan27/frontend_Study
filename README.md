@@ -24,27 +24,27 @@
 
 ## ✏️ Study
 
-### Frontend-CS
+### ⭐ Frontend-CS
 
 | 주제                            | 링크                                                                                                                                                                                                                                | 작성자     | 진행일 |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
-| CSR, SSR                        | [바로가기](hhttps://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/CSR-SSR.md)                                                                                                                                      | **이채은** | 230630 |
+| CSR, SSR                        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/CSR-SSR.md)                                                                                                                                       | **이채은** | 230630 |
 | 동기, 비동기 & 블로킹, 논블로킹 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md) | **박태환** | 230630 |
 
-### Language
+### ⭐ Language
 
 #### JavaScript
 
 | 주제          | 링크                                                                                                                                       | 작성자     | 진행일 |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------ |
-| Ajax          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Ajax.md)                                         | **박태환** | 230711 |
-| 클로저        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/closure.md)                                      | **이채은** | 230711 |
-| 실행 컨텍스트 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/execution-context.md)                            | **이채은** | 230711 |
+| Ajax          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Ajax.md)                                         | **박태환** | -      |
+| 클로저        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/closure.md)                                      | **이채은** | -      |
+| 실행 컨텍스트 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/execution-context.md)                            | **이채은** | -      |
 | 호이스팅      | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Hoisting.md)                                     | **이채은** | -      |
 | this          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this.md) | **박태환** | -      |
 | 스코프        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Scope.md)                                        | **이채은** | -      |
 
-### Library&Framework
+### ⭐ Library&Framework
 
 #### Next.js
 
@@ -67,7 +67,7 @@
 | redux의 라이프 사이클              | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/JavaScript/Redux/Redux%EC%9D%98%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4.md)                                                                                                                                            | **박태환** | -      |
 | Redux Reducer는 왜 순수함수를 쓸까 | [바로가기](<https://github.com/pthwan27/frontend_Study/blob/main/Notes/Library%26Framework/Redux/Redux%20Reducer%EB%8A%94%20%EC%99%9C%20%EC%88%9C%EC%88%98%ED%95%A8%EC%88%98%EB%A5%BC%20%EC%93%B8%EA%B9%8C(feat.%20%EC%96%87%EC%9D%80%20%EB%B3%B5%EC%82%AC%2C%20%EA%B9%8A%EC%9D%80%20%EB%B3%B5%EC%82%AC).md>) | **박태환** | -      |
 
-### web
+### ⭐ web
 
 | 주제                | 링크                                                                                                                                                               | 작성자     | 진행일 |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------ |
@@ -76,7 +76,7 @@
 | 웹 보안             | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/web-security.md)                                                                         | **이채은** | -      |
 | 브라우저의 동작원리 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md) | **박태환** | -      |
 
-### etc
+### ⭐ etc
 
 | 주제           | 링크                                                                                                                   | 작성자     | 진행일 |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
