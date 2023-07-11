@@ -57,8 +57,8 @@
 | 주제                            | 링크                                                                                                                                                                                       | 작성자     | 진행일   |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | -------- |
 | React의 라이프 사이클           | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Library%26Framework/React/life-cycle.md)                                                                             | **이채은** | 23.06.23 |
-| React란?                        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Library%26Framework/React/React%EB%9E%80.md)                                                                         | **박태환** | 23.06.30 |
 | 고차컴포넌트(HOC)와 React Hooks | [바로가기](<https://github.com/pthwan27/frontend_Study/blob/main/Notes/Library%26Framework/React/%EA%B3%A0%EC%B0%A8%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8(HOC)%EC%99%80%20React%20Hooks.md>) | **박태환** | 23.06.23 |
+| React란?                        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Library%26Framework/React/React%EB%9E%80.md)                                                                         | **박태환** | 23.06.30 |
 
 #### Redux
 
@@ -71,10 +71,10 @@
 
 | 주제                | 링크                                                                                                                                                               | 작성자     | 진행일   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | -------- |
-| Cookie와 Session    | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/Cookie%26Session.md)                                                                     | **이채은** | 23.07.07 |
-| HTTP, HTTPS         | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/HTTP%2C%20HTTPS.md)                                                                      | **박태환** | 23.07.11 |
 | 웹 보안             | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/web-security.md)                                                                         | **이채은** | 23.06.27 |
 | 브라우저의 동작원리 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md) | **박태환** | 23.06.27 |
+| Cookie와 Session    | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/Cookie%26Session.md)                                                                     | **이채은** | 23.07.07 |
+| HTTP, HTTPS         | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/HTTP%2C%20HTTPS.md)                                                                      | **박태환** | 23.07.11 |
 
 ### ⭐ etc
 
