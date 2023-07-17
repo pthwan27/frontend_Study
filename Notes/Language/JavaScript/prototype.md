@@ -42,8 +42,7 @@ console.log(animal.__proto__ === Animal.prototype); // true
 
 프로토타입 체인은 프로토타입 링크가 연속적으로 이어진 구조를 말한다.
 
-객체의 속성을 탐색할 때, JavaScript는 해당 객체부터 시작해 프로토타입 체인을 따라가며 해당 속성을 찾는다. 만약 최종적인 원형 객체은 Object.prototype까지 탐색했는데도 찾지 못하면 undefined를 반환한다.
-bar란 객체 속성된 것만 탐색을 하는 게 아니라 Object.prototype이라는 자바스크립트의 최종 원형 객체까지 탐색을 한 후 해당 값을 반환한다.<br/><br/>
+객체의 속성을 탐색할 때, JavaScript는 해당 객체부터 시작해 프로토타입 체인을 따라가며 해당 속성을 찾는다. 만약 최종적인 원형 객체은 Object.prototype까지 탐색했는데도 찾지 못하면 undefined를 반환한다.<br/><br/>
 
 ## 예시
 
