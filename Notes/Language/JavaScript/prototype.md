@@ -1,8 +1,8 @@
 # 프로토타입 객체
 
-JavaScript는 클래스 기반 객체지향 프로그래밍 언어와 달리 **기존의 객체를 복제하여 새로운 객체를 생성**한다. 이를 프로토타입 기반 객체지향 프로그래밍 언어라 한다.
+JavaScript는 클래스 기반 객체지향 프로그래밍 언어와 달리 **기존의 객체를 참조하여 새로운 객체를 생성**한다. 이를 프로토타입 기반 객체지향 프로그래밍 언어라 한다.
 
-여기서 복제라는 말은 **프로토타입 링크를 통해 해당 객체를 참조하여 만드는 것**을 말한다.<br/><br/><br/>
+여기서 참조라는 말은 **프로토타입 링크를 통해 해당 객체를 참조하여 만드는 것**을 말한다.<br/><br/><br/>
 
 # 프로토타입 링크
 
@@ -14,7 +14,7 @@ JavaScript는 클래스 기반 객체지향 프로그래밍 언어와 달리 **�
 
 ## 예시
 
-프로토타입 링크는 객체의 `__proto__`속성을 통해 접근할 수 있다.
+프로토타입 링크에는 표준 메소드인 `Object.getPrototypeOf()`를 사용하거나 `instance.constructor.prototype`을 통해 접근할 수 있다. `__proto__`로 접근하는 것은 비표준 방식이다.
 
 ```jsx
 function Animal(name) {
@@ -27,6 +27,7 @@ Animal.prototype.speak = function () {
 
 let animal = new Animal('Animal');
 
+console.log(Object.getPrototypeOf(animal) === Animal.prototype); // true
 console.log(animal.__proto__ === Animal.prototype); // true
 ```
 
@@ -83,11 +84,11 @@ dog.speak(); // Gunny barks.
 
 이런 방식으로, 프로토타입 체인은 상속과 메소드 공유를 가능하게 하며, 메소드 오버라이딩은 특정 인스턴스에서의 메소드의 동작을 변경할 수 있다.<br/><br/><br/>
 
-# this 메소드 추가 vs 프로토타입 메소드 추가
+# this 메소드 생성 vs 프로토타입 메소드 생성
 
-this를 통한 메소드 추가, 프로토타입을 통한 메소드 추가, 뭐가 다른 걸까? 생성자 함수의 **`this`**를 사용하여 메소드를 추가하는 방법과 프로토타입에 메소드를 추가하는 방법은 사실상 동일한 기능을 수행하지만, **메모리 사용과 관련하여 차이가 있다.**
+this를 통한 메소드 생성, 프로토타입을 통한 메소드 생성, 뭐가 다른 걸까? 생성자 함수의 **`this`** 를 사용하여 메소드를 생성하는 방법과 프로토타입에 메소드를 생성하는 방법은 사실상 동일한 기능을 수행하지만, **메모리 사용과 관련하여 차이가 있다.**
 
-## 생성자 함수의 this를 사용하여 메소드 추가
+## 생성자 함수의 this를 사용하여 메소드 생성
 
 이 방법은 **각 객체마다 독립적인 메소드를 생성**한다. 따라서 같은 기능을 가진 메소드를 각각의 객체마다 따로 가지게 되어 메모리를 더 많이 사용하게 된다.
 
@@ -105,9 +106,9 @@ let person2 = new Person("Taehwan");
 **console.log(person1.sayHello === person2.sayHello); // false**
 ```
 
-위의 코드에서 **`person1`**과 **`person2`**는 각각 자신만의 **`sayHello`** 메소드를 가지고 있다. 이들 메소드는 기능적으로 동일하지만, 실제로는 서로 다른 메모리 주소에 할당된 별개의 함수이다.<br/><br/>
+위의 코드에서 **`person1`** 과 **`person2`** 는 각각 자신만의 **`sayHello`** 메소드를 가지고 있다. 이들 메소드는 기능적으로 동일하지만, 실제로는 서로 다른 메모리 주소에 할당된 별개의 함수이다.<br/><br/>
 
-## 프로토타입에 메소드 추가
+## 프로토타입에 메소드 생성
 
 모든 인스턴스가 하나의 메소드를 공유하게 만든다. 이는 메모리 효율성을 향상시키는 방법이며, 모든 인스턴스가 동일한 동작을 공유하게 된다.
 
@@ -123,10 +124,10 @@ Person.prototype.sayHello = function() {
 let person1 = new Person("Chaeeun");
 let person2 = new Person("Taehwan");
 
-**console.log(person1.sayHello === person2.sayHello); // true**
+**console.log(person1.sayHello === person2.sayHello); // true
 ```
 
-위의 코드에서 **`person1`**과 **`person2`**는 동일한 **`sayHello`** 메소드를 공유한다. 이 메소드는 **`Person.prototype`**에 저장되어 있으며, 모든 **`Person`** 인스턴스에서 접근할 수 있다.<br/><br/>
+위의 코드에서 **`person1`** 과 **`person2`** 는 동일한 **`sayHello`** 메소드를 공유한다. 이 메소드는 **`Person.prototype`** 에 저장되어 있으며, 모든 **`Person`** 인스턴스에서 접근할 수 있다.<br/><br/>
 
 # 정리
 
