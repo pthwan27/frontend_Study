@@ -102,8 +102,8 @@ URL의 `Protocol`, `Host`, `Port`를 통해 같은 출처인지 다른 출처
             target: 'http://localhost:3095', // 클라이언트에서 api로 보내는 요청은 주소를 3095로 바꿔서 보내겠다 라는 뜻
             changeOrigin: true, // cross origin 허용 설정
           },
-    			'/auth':{
-    				target: 'http://localhost:3095', // 클라이언트에서 auth로 보내는 요청은 주소를 3095로 바꿔서 보내겠다 라는 뜻
+            '/auth':{
+            target: 'http://localhost:3095', // 클라이언트에서 auth로 보내는 요청은 주소를 3095로 바꿔서 보내겠다 라는 뜻
             changeOrigin: true, // cross origin 허용 설정
         },
       },
@@ -121,7 +121,7 @@ URL의 `Protocol`, `Host`, `Port`를 통해 같은 출처인지 다른 출처
         nickname,
         password,
       })
-    기 요청 코드
+    // 비동기 요청 코드
     axios
       .post('http://localhost:3095/auth/login', {
         email,
