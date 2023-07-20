@@ -299,3 +299,10 @@ async function increaseNumberAsync() {
 
 increaseNumberAsync();
 ```
+<br/><br/><br/>
+# 참고
+
+https://dev.to/jerrycode06/callback-hell-and-how-to-rescue-it-ggj
+
+https://hi-zini.tistory.com/entry/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%EB%B0%A9%EC%8B%9D-%EC%B2%98%EB%A6%AC-%EB%B0%A9%EB%B2%95-Callback-Promise-async-await
+
