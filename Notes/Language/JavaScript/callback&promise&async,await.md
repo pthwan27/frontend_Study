@@ -85,7 +85,7 @@ obj.registerCallback(); // undefined 또는 전역 객체의 name 속성값 (기
 <img src="../../../images/Language/JavaScript/callback&promise&async,await/callbackHell.jpg">
 
 - 여러 비동기 작업을 순차적으로 수행해야 할 경우, 콜백 내부에 다른 콜백을 중첩하여 사용하게 되는데, 이러한 중첩이 깊어지면 코드의 가독성이 떨어지는 콜백 지옥에 빠질 수 있다.
-- Promise, async/await, Generator 등을 사용하여 방지할 수 있다<br/><br/><br/>
+- Promise, async/await를 사용하여 방지할 수 있다<br/><br/><br/>
 
 # Promise
 
