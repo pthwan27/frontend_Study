@@ -45,6 +45,8 @@
 | 스코프        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Scope.md)                                        | **이채은** | 23.06.17 |
 | 클로저        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/closure.md)                                      | **이채은** | 23.07.04 |
 | this          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this.md) | **박태환** | 23.07.07 |
+| 프로토타입 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/prototype.md) | **이채은** | 23.07.18 |
+
 
 ### ⭐ Library&Framework
 
@@ -77,6 +79,7 @@
 | 브라우저의 동작원리 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98%20%EB%8F%99%EC%9E%91%EC%9B%90%EB%A6%AC.md) | **박태환** | 23.06.27 |
 | Cookie와 Session    | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/Cookie%26Session.md)                                                                     | **이채은** | 23.07.07 |
 | HTTP, HTTPS         | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/HTTP%2C%20HTTPS.md)                                                                      | **박태환** | 23.07.11 |
+| CORS | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/CORS.md) | **박태환** | 23.07.18 |
 
 ### ⭐ etc
 
