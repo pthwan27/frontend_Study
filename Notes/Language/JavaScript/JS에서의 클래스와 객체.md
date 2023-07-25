@@ -38,7 +38,7 @@ JS는 웹 브라우저에서만 동작하도록 설계되었고, 러닝 커브�
 클래스가 등장하기 전 JavaScript는 생성자 함수를 사용해 객체를 생성했습니다.
 
 ```jsx
-class FunctionCar = (function() {
+const FunctionCar = (function() {
 	function FunctionCar(name){
 		this.name = name;
 		this.position = 0;
