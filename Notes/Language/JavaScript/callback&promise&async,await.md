@@ -149,7 +149,7 @@ promise
 
 - ⭐ **pending**(대기): 비동기 처리 로직이 아직 완료되지 않은 상태
 - ⭐ **fulfilled**(이행): 비동기 처리가 완료 되어 프로미스가 결과 값을 반환해준 상태
-- ⭐ **redjected**(실패): 비동기 처리가 실패하거나 오류가 발생한 상태
+- ⭐ **rejected**(실패): 비동기 처리가 실패하거나 오류가 발생한 상태
 - settled(완료): fulfilled와 rejected를 합쳐 부르는 완료 상태
 
 # async/await
