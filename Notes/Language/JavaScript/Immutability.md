@@ -41,7 +41,17 @@ console.log(obj); // { name: "Bob" }, 객체 내용이 변경됨
 객체나 배열을 직접 수정하는 대신 복사본을 만들어서 작업한다.
 
 ## 얕은 복사(Shallow Copy)
+
 얕은 복사는 객체의 최상위 프로퍼티만 복사하는 방법이다. 
+원시 타입의 데이터는 그 값 자체가 복사되지만 참조 타입의 데이터는 참조 값만 복사 된다.
+
+```javascript
+const obj = {a:1, b:2};
+const shallowObj = obj;
+shallowObj.a = 3;
+console.log(obj); // { a: 3, b: 2 }
+```
+### Object.assign
 ```javascript
 const obj = { a: 1, b: 2 };
 
@@ -69,6 +79,7 @@ shallowCopy.b.c = 3;
 console.log(obj.b.c); // 3, 원본 객체의 값도 변경됨
 
 ```
+중첩 객체 구조에 대해 완전한 독립적인 복사본을 만드는 것이 아니기 때문에 얕은 복사이다.
 
 ## 깊은 복사(Deep Copy)
 깊은 복사는 객체의 모든 레벨의 프로퍼티를 복사하는 방법이다. 복사된 객체는 원본 객체와 완전히 독립적이다. `JSON.parse`와 `JSON.stringify` 또는 라이브러리를 사용할 수 있다.
