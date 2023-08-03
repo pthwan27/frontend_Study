@@ -48,7 +48,7 @@
 | 프로토타입 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/prototype.md) | **이채은** | 23.07.18 |
 | 클래스와 객체 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JS%EC%97%90%EC%84%9C%EC%9D%98%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4.md) | **박태환** | 23.07.25 |
 | 비동기통신 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/callback%26promise%26async%2Cawait.md) | **이채은** | 23.07.25 |
-| Immutability | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Immutability.md) | **이채은** | 23.08.03 |
+| 불변성 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Immutability.md) | **이채은** | 23.08.03 |
 
 ### ⭐ Library&Framework
 
