@@ -112,7 +112,7 @@ javascript에서의 모듈의 한계 때문에 등장하였다. javascript에서
 
 웹 팩은 기본적으로 JavaScript 및 JSON 파일만 해석이 가능하다. CSS, SVG, TypeScript, Babel 등 다양한 포맷의 파일을 처리하기 위해서는 loader를 통해 앱에서 사용할 수 있는 모듈로 변환할 수 있다.
 
-```json
+```javascript
 // webpack.config.js
 module.exports = {
   // 모듈 설정
