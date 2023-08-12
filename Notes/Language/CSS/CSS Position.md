@@ -80,7 +80,7 @@ div:nth-of-type(2) {
 
 두 번째 `<div>`를 `absolute`로 바꾼 뒤 다음과 같이 작성한다면 다음과 같이 바뀌게 됩니다.
 
-![absolut](../../../images/Language/CSS/CSS%20Position/absolute.png)
+![absolute](../../../images/Language/CSS/CSS%20Position/absolute.png)
 
 `position: absolute`인 요소는 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와 더 이상 상호작용을 하지 않게 된다는 것입니다.
 따라서 위에서 보이는 것처럼, 첫 번째 요소 아래에 바로 세 번째 요소가 배치됩니다.
@@ -105,7 +105,7 @@ div:nth-of-type(2) {
 
 위의 예제에서 2번째 `<div>`를 바꾸게 되면 다음과 같이 바뀌게 됩니다.
 
-![fixed](.../../../images/Language/CSS/CSS%20Position/fixed.png)
+![fixed](../../../images/Language/CSS/CSS%20Position/fixed.png)
 
 `position: fixed`인 요소도 `position: absolute`인 요소와 마찬가지로 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와 더 이상 상호작용 하지 않습니다.
 
