@@ -12,7 +12,7 @@ CSS에서 `position` 속성은 HTML 문서의 요소가 배치되는 방식을 �
 
 `position`이 `static`인 요소들은 HTML 문서 상에 원래 있어야 하는 위치에 배치됩니다.
 
-**따라서 `top, left, bottom, right` 속성 값이 무시됩니다.** 
+**따라서 `top, left, bottom, right` 속성 값이 무시됩니다.**
 
 ```html
 <main>
@@ -45,7 +45,7 @@ div:nth-of-type(2) {
 
 예를 들어 위의 `div` 중 두번째 `div`의 `css`를 다음과 같이 작성하면 다음과 같이 바뀌게 됩니다.
 
-![relative](../../images/etc/CSS%20Position/relative.png)
+![relative](../../../images/Language/CSS/CSS%20Position/relative.png)
 
 ### **position : absolute**
 
@@ -55,7 +55,7 @@ div:nth-of-type(2) {
 
 이 때 주의해야하는 것은 **상위 요소**가 `static`이 아니여야한다는 것입니다!
 
-만약 상위 요소 중 `static`이 아닌 요소가 없다면 `<body>`가 배치 기준이 됩니다! 
+만약 상위 요소 중 `static`이 아닌 요소가 없다면 `<body>`가 배치 기준이 됩니다!
 
 ```css
 main {
@@ -80,28 +80,32 @@ div:nth-of-type(2) {
 
 두 번째 `<div>`를 `absolute`로 바꾼 뒤 다음과 같이 작성한다면 다음과 같이 바뀌게 됩니다.
 
-![absolut](../../images/etc/CSS%20Position/absolute.png)
+![absolut](../../../images/Language/CSS/CSS%20Position/absolute.png)
 
-`position: absolute`인 요소는 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와 더 이상 상호작용을 하지 않게 된다는 것입니다. 
+`position: absolute`인 요소는 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와 더 이상 상호작용을 하지 않게 된다는 것입니다.
 따라서 위에서 보이는 것처럼, 첫 번째 요소 아래에 바로 세 번째 요소가 배치됩니다.
 
 ### **position : fixed**
+
 우리가 화면에서 드래그를 했을 때 특정 부분에 고정되어 있는 UI가 `fixed`입니다.
 
-`fixed`는 배치 기준이 부모 요소가 아닌 브라우저 전체화면인 `viewport` 입니다. 
+`fixed`는 배치 기준이 부모 요소가 아닌 브라우저 전체화면인 `viewport` 입니다.
 
 `fixed`요소에서 `top`, `left`, `bottom`, `right` 속성은 각각 브라우저 상단, 좌측, 하단, 우측으로 부터 해당 요소가 얼마나 떨어져있는지를 결정합니다.
 
 ```css
 div:nth-of-type(2) {
-  position: fixed;  bottom: 8px;  right: 16px;  background: cyan;
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+  background: cyan;
   opacity: 0.8;
 }
 ```
 
 위의 예제에서 2번째 `<div>`를 바꾸게 되면 다음과 같이 바뀌게 됩니다.
 
-![fixed](../../images/etc/CSS%20Position/fixed.png)
+![fixed](.../../../images/Language/CSS/CSS%20Position/fixed.png)
 
 `position: fixed`인 요소도 `position: absolute`인 요소와 마찬가지로 HTML 문서 상에서 독립되어 앞뒤에 나온 요소와 더 이상 상호작용 하지 않습니다.
 
@@ -114,9 +118,9 @@ div:nth-of-type(2) {
 ```css
 main {
   width: 300px;
-  height: 120px;  
-	overflow: auto;  
-	background: tomato;
+  height: 120px;
+  overflow: auto;
+  background: tomato;
 }
 ```
 
@@ -131,6 +135,6 @@ div:nth-of-type(2) {
 }
 ```
 
-![sticky1](../../images/etc/CSS%20Position/sticky1.png)
+![sticky1](../../../images/Language/CSS/CSS%20Position/sticky1.png)
 
-![sticky2](../../images/etc/CSS%20Position/sticky2.png)
+![sticky2](../../../images/Language/CSS/CSS%20Position/sticky2.png)
