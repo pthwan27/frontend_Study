@@ -22,7 +22,7 @@ CSS에서 `position` 속성은 HTML 문서의 요소가 배치되는 방식을 �
 </main>
 ```
 
-![static](../../images/etc/CSS%20Position/static.png)
+![static](../../../images/etc/CSS%20Position/static.png)
 
 ### **position : relative**
 
