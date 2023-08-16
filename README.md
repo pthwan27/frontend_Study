@@ -32,7 +32,7 @@
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------- |
 | 동기, 비동기 & 블로킹, 논블로킹 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/%EB%8F%99%EA%B8%B0%EC%99%80%20%EB%B9%84%EB%8F%99%EA%B8%B0%20%26%20%EB%B8%94%EB%A1%9C%ED%82%B9%EA%B3%BC%20%EB%85%BC%EB%B8%94%EB%A1%9C%ED%82%B9.md) | **박태환** | 23.06.13 |
 | CSR, SSR                        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/CSR-SSR.md)                                                                                                                                       | **이채은** | 23.06.30 |
-| 웹팩&바벨&폴리필          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/webpack%26babel%26polyfill.md) | **이채은** | 23.08.10 |
+| 웹팩&바벨&폴리필          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Frontend-CS/webpack%26babel%26polyfill.md) | **이채은** | 23.08.12 |
 
 ### ⭐ Language
 
@@ -54,7 +54,7 @@
 #### CSS
 | 주제          | 링크                                                                                                                                       | 작성자     | 진행일   |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | -------- |
-| Position  | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/CSS/CSS%20Position.md)                                         | **박태환** | 23.08.10 |
+| Position  | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/CSS/CSS%20Position.md)                                         | **박태환** | 23.08.12 |
 
 
 ### ⭐ Library&Framework
