@@ -46,7 +46,9 @@
 | 클로저        | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/closure.md)                                      | **이채은** | 23.07.04 |
 | this          | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JavaScript%EC%97%90%EC%84%9C%EC%9D%98%20this.md) | **박태환** | 23.07.07 |
 | 프로토타입 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/prototype.md) | **이채은** | 23.07.18 |
-
+| 클래스와 객체 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JS%EC%97%90%EC%84%9C%EC%9D%98%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4.md) | **박태환** | 23.07.25 |
+| 비동기통신 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/callback%26promise%26async%2Cawait.md) | **이채은** | 23.07.25 |
+| 불변성 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Immutability.md) | **이채은** | 23.08.03 |
 
 ### ⭐ Library&Framework
 
@@ -80,6 +82,7 @@
 | Cookie와 Session    | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/Cookie%26Session.md)                                                                     | **이채은** | 23.07.07 |
 | HTTP, HTTPS         | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/HTTP%2C%20HTTPS.md)                                                                      | **박태환** | 23.07.11 |
 | CORS | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/CORS.md) | **박태환** | 23.07.18 |
+| 이벤트 버블링과 캡처링 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC%20%EC%BA%A1%EC%B2%98%EB%A7%81.md)                                                                      | **박태환** | 23.08.03 |
 
 ### ⭐ etc
 

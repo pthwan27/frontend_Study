@@ -85,7 +85,7 @@ obj.registerCallback(); // undefined 또는 전역 객체의 name 속성값 (기
 <img src="../../../images/Language/JavaScript/callback&promise&async,await/callbackHell.jpg">
 
 - 여러 비동기 작업을 순차적으로 수행해야 할 경우, 콜백 내부에 다른 콜백을 중첩하여 사용하게 되는데, 이러한 중첩이 깊어지면 코드의 가독성이 떨어지는 콜백 지옥에 빠질 수 있다.
-- Promise, async/await, Generator 등을 사용하여 방지할 수 있다<br/><br/><br/>
+- Promise, async/await를 사용하여 방지할 수 있다<br/><br/><br/>
 
 # Promise
 
@@ -149,7 +149,7 @@ promise
 
 - ⭐ **pending**(대기): 비동기 처리 로직이 아직 완료되지 않은 상태
 - ⭐ **fulfilled**(이행): 비동기 처리가 완료 되어 프로미스가 결과 값을 반환해준 상태
-- ⭐ **redjected**(실패): 비동기 처리가 실패하거나 오류가 발생한 상태
+- ⭐ **rejected**(실패): 비동기 처리가 실패하거나 오류가 발생한 상태
 - settled(완료): fulfilled와 rejected를 합쳐 부르는 완료 상태
 
 # async/await
@@ -299,3 +299,10 @@ async function increaseNumberAsync() {
 
 increaseNumberAsync();
 ```
+<br/><br/><br/>
+# 참고
+
+https://dev.to/jerrycode06/callback-hell-and-how-to-rescue-it-ggj
+
+https://hi-zini.tistory.com/entry/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%EB%B0%A9%EC%8B%9D-%EC%B2%98%EB%A6%AC-%EB%B0%A9%EB%B2%95-Callback-Promise-async-await
+
