@@ -90,6 +90,10 @@
 | HTTP, HTTPS         | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/HTTP%2C%20HTTPS.md)                                                                      | **박태환** | 23.07.11 |
 | CORS | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/CORS.md) | **박태환** | 23.07.18 |
 | 이벤트 버블링과 캡처링 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC%20%EC%BA%A1%EC%B2%98%EB%A7%81.md)                                                                      | **박태환** | 23.08.03 |
+| HTTP 메소 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/HTTP-Method.md) | **이채은** | 23.08.18 |
+| 웹 표준과 접근성 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/web/%EC%9B%B9%20%ED%91%9C%EC%A4%80%20%26%20%EC%A0%91%EA%B7%BC%EC%84%B1.md) | **박태환** | 23.08.18 |
+
+
 
 ### ⭐ etc
 
