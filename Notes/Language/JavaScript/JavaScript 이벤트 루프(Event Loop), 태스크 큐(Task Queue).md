@@ -124,3 +124,13 @@ JavaScript Engine은 `Memory Heap`과 `Call Stack`으로 구성되어 있고, �
 `Event Loop` 는 `Call Stack`과 `Task Queue`의 상태를 체크하고, `Call Stack`이 빈 상태가 되면 `Task Queue`의 첫 번째 콜백 함수를 `Call Stack`으로 밀어넣어 줍니다.
 
 `Event Loop`와 `Task Queue`는 자바스크립트 엔진이 하나의 코드 조각을 하나씩 처리할 수 있도록 작업을 스케줄하는 동시에 자바스크립트에서 비동기 작업을 할 수 있도록 해줍니다.
+
+
+
+
+출처 : <br/>
+https://velog.io/@dami/JS-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84Event-Loop-%ED%83%9C%EC%8A%A4%ED%81%AC-%ED%81%90Task-Queue
+
+https://myhappyman.tistory.com/268
+
+https://velog.io/@holim0/Front-End-%EB%A9%B4%EC%A0%91-%EC%A7%88%EB%AC%B8-%EB%8C%80%EB%B9%84-Part5-JavaScript-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EB%A3%A8%ED%94%84-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC
