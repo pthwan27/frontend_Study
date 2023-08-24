@@ -28,6 +28,7 @@ console.log(과자이터레이터.next()); // {value: undefined, done: true}
 # 이터레이터(iterator)
 
 이터레이터는 **이터러블의 요소를 순회하는 포인터**와 같은 역할을 한다.
+
 <img src="../../../images/Language/JavaScript/Iterable&Iterator/next.png">
 
 **이터레이터 객체는 반드시 `next`라는 메소드를 가지고 있어야한다.** `next` 메소드는 아래와 같은 객체를 반환한다.
