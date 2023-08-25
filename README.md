@@ -50,6 +50,8 @@
 | 클래스와 객체 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JS%EC%97%90%EC%84%9C%EC%9D%98%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%99%80%20%EA%B0%9D%EC%B2%B4.md) | **박태환** | 23.07.25 |
 | 비동기통신 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/callback%26promise%26async%2Cawait.md) | **이채은** | 23.07.25 |
 | 불변성 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Immutability.md) | **이채은** | 23.08.03 |
+| 이벤트 루프와 테스크 큐 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/JavaScript%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%A3%A8%ED%94%84(Event%20Loop)%2C%20%ED%83%9C%EC%8A%A4%ED%81%AC%20%ED%81%90(Task%20Queue).md) | **박태환** | 23.08.24 |
+| 이터러블과 이터레이터 | [바로가기](https://github.com/pthwan27/frontend_Study/blob/main/Notes/Language/JavaScript/Iterable%26Iterator.md) | **이채은** | 23.08.24 |
 
 #### CSS
 | 주제          | 링크                                                                                                                                       | 작성자     | 진행일   |
