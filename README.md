@@ -1,5 +1,7 @@
 # 전프협의 스터디
 
+23.06.09 ~ ing
+
 <details>
     <summary>자세히</summary>
 
@@ -107,5 +109,4 @@
 
 </details>
 
-23.06.09 ~ ing
 
